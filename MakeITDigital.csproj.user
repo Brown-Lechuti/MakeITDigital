@@ -5,5 +5,13 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
+    <_SelectedScaffolderID>ModelBasedCrudRazorPageScaffolder</_SelectedScaffolderID>
+    <_SelectedScaffolderCategoryPath>root/Common/RazorPage</_SelectedScaffolderCategoryPath>
+    <WebStackScaffolding_ViewDialogWidth>650</WebStackScaffolding_ViewDialogWidth>
+    <WebStackScaffolding_IsLayoutPageSelected>True</WebStackScaffolding_IsLayoutPageSelected>
+    <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
+    <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
+    <WebStackScaffolding_LayoutPageFile />
+    <WebStackScaffolding_DbContextTypeFullName>MakeITDigital.Models.MarketMedia</WebStackScaffolding_DbContextTypeFullName>
   </PropertyGroup>
 </Project>

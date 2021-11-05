@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-#nullable disable
+
 
 namespace MakeITDigital.Models
 {
@@ -17,11 +17,11 @@ namespace MakeITDigital.Models
         {
         }
 
-        public virtual DbSet<Location> Locations { get; set; }
-        public virtual DbSet<Metum> Meta { get; set; }
-        public virtual DbSet<Photo> Photos { get; set; }
-        public virtual DbSet<Tag> Tags { get; set; }
-        public virtual DbSet<User> Users { get; set; }
+        public  DbSet<Location> Locations { get; set; }
+        public  DbSet<Metum> Meta { get; set; }
+        public  DbSet<Photo> Photos { get; set; }
+        public  DbSet<Tag> Tags { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
