@@ -436,3 +436,4 @@ C:\Users\Lenovo Pc\Documents\Projects\MakeITDigital\obj\Debug\net5.0\Razor\Pages
 C:\Users\Lenovo Pc\Documents\Projects\MakeITDigital\obj\Debug\net5.0\Razor\Pages\Usars\Details.cshtml.g.cs
 C:\Users\Lenovo Pc\Documents\Projects\MakeITDigital\obj\Debug\net5.0\Razor\Pages\Usars\Edit.cshtml.g.cs
 C:\Users\Lenovo Pc\Documents\Projects\MakeITDigital\obj\Debug\net5.0\Razor\Pages\Usars\Index.cshtml.g.cs
+C:\Users\Lenovo Pc\Documents\Projects\MakeITDigital\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

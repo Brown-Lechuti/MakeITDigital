@@ -11,9 +11,9 @@ namespace MakeITDigital.Pages.Usars
 {
     public class IndexModel : PageModel
     {
-        private readonly MakeITDigital.Models.MarketMedia _context;
+        private readonly MakeITDigital.Models.MarketMediaContext _context;
 
-        public IndexModel(MakeITDigital.Models.MarketMedia context)
+        public IndexModel(MakeITDigital.Models.MarketMediaContext context)
         {
             _context = context;
         }

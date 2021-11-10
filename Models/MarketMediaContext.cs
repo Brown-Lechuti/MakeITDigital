@@ -1,19 +1,17 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 
 
 namespace MakeITDigital.Models
 {
-    public partial class MarketMedia : DbContext
+    public partial class MarketMediaContext : IdentityDbContext
     {
-        public MarketMedia()
+        public MarketMediaContext()
         {
         }
 
-        public MarketMedia(DbContextOptions<MarketMedia> options)
-            : base(options)
+        public MarketMediaContext(DbContextOptions<MarketMediaContext> options): base(options)
         {
         }
 
@@ -28,14 +26,14 @@ namespace MakeITDigital.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=MarketMedia;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=MarketMediaDB;Trusted_Connection=True;");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
-
+            base.OnModelCreating(modelBuilder);//
             modelBuilder.Entity<Location>(entity =>
             {
                 entity.Property(e => e.PhotoId).ValueGeneratedNever();

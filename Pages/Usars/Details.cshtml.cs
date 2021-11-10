@@ -11,9 +11,9 @@ namespace MakeITDigital.Pages.Usars
 {
     public class DetailsModel : PageModel
     {
-        private readonly MakeITDigital.Models.MarketMedia _context;
+        private readonly MakeITDigital.Models.MarketMediaContext _context;
 
-        public DetailsModel(MakeITDigital.Models.MarketMedia context)
+        public DetailsModel(MakeITDigital.Models.MarketMediaContext context)
         {
             _context = context;
         }

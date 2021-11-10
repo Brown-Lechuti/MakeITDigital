@@ -13,9 +13,9 @@ namespace MakeITDigital.Pages.Usars
 {
     public class CreateModel : PageModel
     {
-        private readonly MakeITDigital.Models.MarketMedia _context;
+        private readonly MakeITDigital.Models.MarketMediaContext _context;
 
-        public CreateModel(MakeITDigital.Models.MarketMedia context)
+        public CreateModel(MakeITDigital.Models.MarketMediaContext context)
         {
             _context = context;
         }

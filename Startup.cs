@@ -2,6 +2,7 @@ using MakeITDigital.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,7 +27,8 @@ namespace MakeITDigital
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddDbContext<MarketMedia>(options =>options.UseSqlServer(Configuration.GetConnectionString("MarketMedia")));
+            services.AddDbContext<MarketMediaContext>(options =>options.UseSqlServer(Configuration.GetConnectionString("MarketMedia")));
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<MarketMediaContext>();
 
         }
 
@@ -48,7 +50,7 @@ namespace MakeITDigital
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

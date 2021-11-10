@@ -12,9 +12,9 @@ namespace MakeITDigital.Pages.Usars
 {
     public class EditModel : PageModel
     {
-        private readonly MakeITDigital.Models.MarketMedia _context;
+        private readonly MakeITDigital.Models.MarketMediaContext _context;
 
-        public EditModel(MakeITDigital.Models.MarketMedia context)
+        public EditModel(MakeITDigital.Models.MarketMediaContext context)
         {
             _context = context;
         }
