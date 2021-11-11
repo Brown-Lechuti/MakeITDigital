@@ -432,3 +432,4 @@ C:\Users\Lenovo Pc\Documents\Projects\MakeITDigital\obj\Debug\net5.0\MakeITDigit
 C:\Users\Lenovo Pc\Documents\Projects\MakeITDigital\obj\Debug\net5.0\ref\MakeITDigital.dll
 C:\Users\Lenovo Pc\Documents\Projects\MakeITDigital\obj\Debug\net5.0\MakeITDigital.pdb
 C:\Users\Lenovo Pc\Documents\Projects\MakeITDigital\obj\Debug\net5.0\MakeITDigital.genruntimeconfig.cache
+C:\Users\Lenovo Pc\Documents\Projects\MakeITDigital\obj\Debug\net5.0\Razor\Pages\Login.cshtml.g.cs
