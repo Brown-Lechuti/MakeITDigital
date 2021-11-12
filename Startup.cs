@@ -29,6 +29,10 @@ namespace MakeITDigital
             services.AddRazorPages();
             services.AddDbContext<MarketMediaContext>(options =>options.UseSqlServer(Configuration.GetConnectionString("MarketMedia")));
             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<MarketMediaContext>();
+            services.ConfigureApplicationCookie(config =>
+            {
+                config.LoginPath = "/Login";
+            });//Reset the login path from root (soultion folder) to Login page.
 
         }
 
